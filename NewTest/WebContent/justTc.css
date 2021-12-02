@@ -1,0 +1,89 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(45deg,rgb(224,207,254),rgb(255,239,255)) fixed;
+}
+.container{
+	position: relative;
+	width: 70rem;
+}
+
+.jpg{
+	width: 70rem;
+	height: 37rem;
+}
+
+.all{
+	margin: 7rem 0 0;
+	position: absolute;
+	right: 2rem;
+	top: 0;
+	padding: 2rem 2rem 2rem 2rem;
+	justify-content: center;
+	background-color: rgba(75, 81, 95, 0.3);
+	box-shadow: 7px 7px 17px rgba(52, 56, 66, 0.5);
+	border-radius: 5px;
+}
+
+.all1{
+	margin: 8rem 0 0;
+	width: 25%;
+	position: absolute;
+	right: 5rem;
+	top: 0;
+	padding: 5rem 5rem 5rem 5rem;
+	justify-content: center;
+	/*background-color: rgba(75, 81, 95, 0.3);*/
+	box-shadow: 7px 7px 17px rgba(52, 56, 66, 0.5);
+	border-radius: 5px;
+}
+
+form .sub{
+	border:none;
+	outline: none;
+	margin: 1rem 0 0;
+	width: 40%;
+	height: 2rem;
+	border-radius: 3rem;
+	background: linear-gradient(90deg,rgb(181,154,254),rgb(245,289,253));
+	box-shadow: 0 0 8px reb(181,154,254);
+	cursor: pointer;
+	color: rgb(255, 170, 255);
+}
+
+div #a {
+	font_family: "微软雅黑";
+	color: rgb(181,154,254);
+	padding-left: 20px;
+}
+
+input {
+	border-radius: 5px;
+	border-style: hidden;
+	height: 20px;
+	background-color: rgba(255, 170, 255, 0.5);
+	color: #f0edf3;
+	padding-left: 10px;
+}
+
+.focus {
+	border: 1px solid #f00;
+	background: #fcc;
+}
+.high{
+	color: red;
+}
+.formtips_onError{
+	color:red;
+}
+.formtips_onSuccess{
+	color:green;
+}
