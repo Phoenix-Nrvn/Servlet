@@ -1,5 +1,9 @@
 package NewTest.test.servlet;
-
+/**
+ * 调用sql语句，连接数据库，将提交的注册信息导入数据库
+ * 若成功，随后跳转至user_info.jsp界面
+ * 若失败，返回Rgstr界面，重新输入
+ */
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -42,7 +46,7 @@ public class RgstrServlet extends HttpServlet {
 		if (rows > 0) {			
 			request.getRequestDispatcher("user_info.jsp").forward(request, response);
 		} else {
-			request.getRequestDispatcher("RgstrError.jsp").forward(request, response);
+			request.getRequestDispatcher("LoginError.jsp").forward(request, response);
 		}
 		ConnDB.close();
 	}

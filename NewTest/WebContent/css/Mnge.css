@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+#div1 {
+	font_family: "微软雅黑";
+	color: darkcyan;
+	padding-left: 15px;
+}
+
+#div2 {
+	border-width: 3px;
+	border-color: #F0F8FF;
+	margin-left: 15px;
+	box-shadow: 0px 0px 5px 5px #85a385;
+}
+
+#div3 {
+	padding-left: 15px;
+}
+
+#div4 {
+	margin: 15px;
+}
+
+#linkage {
+	font-family: "arial black";
+	font-size: 25px;
+	color: #ffffff;
+}
+
+#p1 {
+	margin-top: 20px;
+	padding: 5px 5px 5px 15px;
+	color: white;
+	background-color: #ffaa00;
+	box-shadow: 0px 0px 5px 5px #85a385;
+}
+
+#header {
+	padding: 25px 15px 15px 15px;
+	margin: 10 10px 10 10px;
+	background: #fea900;
+	box-shadow: 0px 0px 5px 5px #85a385;
+}
+
+table, th, td {
+	border: 1px solid silver;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+#date {
+	float: right;
+	padding: 30px 10px 10px 10px;
+	height: 40px;
+	color: aliceblue;
+	text-align: right;
+}
+
+.exit {
+	float: right;
+	margin: 0 0 0 10px;
+	color: #fff;
+	line-height: 80px;
+}
+
+body {
+	margin-right: 250px;
+	margin-left: 250px;
+	margin-top: 100px;
+	font-size: 16px;
+	font-family: Arial;
+	padding: 15px 0;
+	background: #FFFFFF;
+	background:  url(img/53e06e8bba9d9.jpg) no-repeat center center fixed;
+	background-size: cover;
+}

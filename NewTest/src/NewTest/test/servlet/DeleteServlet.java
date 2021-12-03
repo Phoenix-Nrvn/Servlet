@@ -1,5 +1,8 @@
 package NewTest.test.servlet;
-
+/**
+ * 点击删除后，根据getParameter获取id
+ * 根据所得id, 通过DELETE子句，进行删除
+ */
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

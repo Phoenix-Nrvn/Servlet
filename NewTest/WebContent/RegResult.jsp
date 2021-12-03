@@ -6,8 +6,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>注册结果</title>
+
 <!-- 外部样式 style.css -->
-<link rel="stylesheet" type="text/css" href="Indexc.css" />
+<link rel="stylesheet" type="text/css" href="css/Indexc.css" />
 </head>
 <body>
 	<%

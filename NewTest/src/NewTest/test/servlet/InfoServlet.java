@@ -1,5 +1,8 @@
 package NewTest.test.servlet;
-
+/**
+ * 一方面通过建立Cookie，对用户信息进行记忆
+ * 同时起到一个承接跳转的作用
+ */
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;

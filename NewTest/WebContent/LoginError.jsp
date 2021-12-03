@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>注册结果</title>
 <!-- 外部样式 style.css -->
-<link rel="stylesheet" type="text/css" href="Indexc.css" />
+<link rel="stylesheet" type="text/css" href="css/Indexc.css" />
 </head>
 <body>
 	<%
@@ -15,7 +15,10 @@
 		java.util.Date date = new java.util.Date();
 		java.text.SimpleDateFormat dtf = new java.text.SimpleDateFormat("yyyy/MM/dd");
 		
-		String fhref = "登录";
+		String fhref = request.getAttribute("fhref").toString();
+		if (fhref == null) {
+			fhref = "登录";
+		}
 	%>
 
 
@@ -29,7 +32,7 @@
 		<div id="content">
 
 			  
-			<h1><%=fhref %>失败，该用户不存在，点击<a href="Rgstr.jsp">注册</a></h1>
+			<h1><%=fhref %>失败，点击<a href="Rgstr.jsp">注册</a></h1>
 			<%
 				//定时跳转网页
 				response.setHeader("refresh", "3;URL=Rgstr.jsp");

@@ -1,5 +1,10 @@
 package NewTest.test.servlet;
-
+/**
+ * 连接数据库，SELECT子句，提供在数据库中根据id查找信息的服务
+ * 建立ArrayList，将数据库中信息导出到list，特别地：
+ * 1. 为list添加"list"属性，以便之后将数据在Manage2.jsp中显示
+ * 2. 根据search的内容是否为空，确定是查找时输出单条信息还是全部读取
+ */
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -51,7 +56,7 @@ public class FindServlet extends HttpServlet {
 			
 			String sql = "SELECT * FROM tb_account";
 			
-			if(searchtext!=null && !searchtext.equals(""))
+			if(searchtext != null && !searchtext.equals(""))
 			{
 				sql = sql + " WHERE susername LIKE '%" + searchtext + "%' or name LIKE '%" + searchtext + "%'";
 			}

@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-		<link rel="stylesheet" type="text/css" href="justTc.css">
+		<link rel="stylesheet" type="text/css" href="css/justTc.css">
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript">
 		$(function(){
@@ -116,6 +116,7 @@
 </head>
 <body>
 	<%
+	//根据id内的值，判断使用类型为注册或修改信息
 		String id ="0";
 		String susername = "";
 		String spassword = "";
@@ -214,7 +215,7 @@
 			break;
 		}
 	} 
-		if(form1.id.value=="0")
+		if(form1.id.value=="0") //跳转选项
 		{
 			form1.action="RgstrServlet";
 		}else//修改

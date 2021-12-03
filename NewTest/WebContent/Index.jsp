@@ -5,7 +5,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Login In</title>
-		<link rel="stylesheet" type="text/css" href="Indexc.css">
+		<link rel="stylesheet" type="text/css" href="css/Indexc.css">
+		
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript">
 		$(function(){
@@ -56,6 +57,7 @@
 			}
 			alert("跳转成功！");
 		});
+		
 		$(function() {
 			$(":input").focus(function() {
 				$(this).addClass("focus");
@@ -104,7 +106,7 @@
 					用户名:
 				</td>
 				<td>
-					<input type="text" name="username" id="username" value="<%=username%>"/>
+					<input type="text" name="username" id="username" class="required" value="<%=username%>"/>
 				</td>
 			</tr>
 			<tr>
@@ -112,7 +114,7 @@
 					密&nbsp;&nbsp;&nbsp;码:
 				</td>
 				<td>
-					<input type="password" name="password" id="pwd3" value=" "/>
+					<input type="password" name="password" id="pwd3" class="required" value=""/>
 				</td>
 			</tr>
 			<tr>
