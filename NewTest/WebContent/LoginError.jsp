@@ -15,10 +15,9 @@
 		java.util.Date date = new java.util.Date();
 		java.text.SimpleDateFormat dtf = new java.text.SimpleDateFormat("yyyy/MM/dd");
 		
-		String fhref = request.getAttribute("fhref").toString();
-		if (fhref == null) {
-			fhref = "登录";
-		}
+		String fhref = "登录";
+		if (request.getAttribute("fhref") != null)
+			fhref = request.getAttribute("fhref").toString();
 	%>
 
 

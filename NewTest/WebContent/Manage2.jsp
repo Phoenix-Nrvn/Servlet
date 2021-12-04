@@ -31,16 +31,6 @@
 			var myMinute = d.getMinutes();
 			var mySecond = d.getSeconds();
 			document.write(myYear+"-"+myMonth+"-"+myDay+" "+myHour+":"+myMinute+":"+mySecond);
-			window.onload = function () {
-				var oBton = document.getElementById("btn1");
-				oBton.onclick = function() {
-					alert("确认更改密码? ");
-				};
-				var oBt = document.getElementById("btn2");
-				oBt.onclick = function() {
-					alert("确认删除? ");
-				};
-			}
 		</script>
 </span>
 <script language="JavaScript">
@@ -94,8 +84,6 @@
 		<input type="submit" name="btnSearch" onclick="checkSearch()" id="btnSearch" value="查找" />
 		<a href="Rgstr.jsp">
 		<input type="button" name="btnEdit" id="btnEdit" value="添加" /></a>
-		<input type="button" id="btn1" value="修改" /> 
-		<input type="button" id="btn2" value="删除" />
 		</div>
 		<div id="div4">
 			<table cellspacing="3" align="center" width="100%">
@@ -127,7 +115,8 @@
 					<td><%=userinfo.getTel()%></td>
 					<td><%=userinfo.getEmail()%></td>
 					<td><%=userinfo.getApart()%></td>
-					<td><a href='Rgstr.jsp?id=<%=userinfo.getId()%>'>编辑</a>
+					<td><a href='Rgstr.jsp?id=<%=userinfo.getId()%>'
+						onclick="if(confirm('是否真的编辑该用户')==true){return true;}else {return false;}">编辑</a>
 						<a href='DeleteServlet?id=<%=userinfo.getId()%>'
 						onclick="if(confirm('是否真的删除该用户')==true){return true;}else {return false;}">删除</a></td>
 
